@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@font-face {
+  font-family: "Time New Roman";
+  src: url("/fonts/TimesNewRoman/timesnewroman.ttf");
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background-color: #393e46;
+  --text-color: #4ecca3;
+  --text-color2: #333333;
+  --font-family-cursive: "Indie Flower", cursive;
+  --font-family: "Time New Roman";
+  --white: #fff;
+}
+html {
+  font-size: 14px;
+}
+body {
+  /* Sass SCSS */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family-cursive);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice_container {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+p {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+header {
+  text-align: center;
+  font-size: 4rem;
+  margin: 30px;
+  text-shadow: 5px 0 #232931;
+}
+/* 1 rem =16px */
+
+/* button {
+  background-color: var(--text-color);
+  color: var(--white);
+  margin-top: 1.2rem;
+  border-radius: 0.6rem;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  outline: none;
+} */
+
+button:hover {
+  cursor: pointer;
+}
+/* Animation */
+/* transition */
+.flag::hover {
+  transform: rotate(270deg);
+}
+
+button {
+  background: #4ecca3;
+  text-shadow: 5px 0 #232931;
+  font-family: var(--font-family-cursive);
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin: 2px;
+  display: block;
+  margin: 32px auto 0 auto;
+  padding: 0 16px;
+  min-height: 4rem;
+  min-width: 7rem;
+}
